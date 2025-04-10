@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BLS Airsoft Játékszervezés</title>
-  <link rel="icon" type="image/png" href="blslogo2022_TEAMdesertcolor3.png" />
+  <link rel="icon" type="image/png" href="blslogo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -12,6 +12,7 @@
       --tan: #c1b49a;
       --dark: #1e1e1e;
       --light: #f4f4f4;
+      --border: #000;
     }
 
     * {
@@ -51,28 +52,47 @@
     }
 
     .section {
-      background-color: var(--green);
-      padding: 1.5rem;
-      border-radius: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: var(--tan);
+      padding: 2rem 1rem;
+      border-radius: 50% / 30%;
+      border: 5px solid var(--border);
       text-align: center;
-      clip-path: ellipse(90% 100% at 50% 50%);
+      position: relative;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .section::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      bottom: -15px;
+      left: -15px;
+      right: -15px;
+      border: 5px solid var(--green);
+      border-radius: 50% / 30%;
+      z-index: -1;
     }
 
     .section h2 {
-      color: var(--tan);
+      color: var(--green);
       margin-bottom: 1rem;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
 
     .section ul {
       list-style-type: none;
-      margin-bottom: 1rem;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    .section li {
+      color: var(--dark);
+      margin: 0.5rem 0;
     }
 
     .section li::before {
       content: "\2713";
-      color: limegreen;
+      color: var(--green);
       margin-right: 0.5rem;
     }
 
@@ -82,6 +102,7 @@
       object-fit: cover;
       border-radius: 1rem;
       margin-top: 1rem;
+      border: 3px solid var(--green);
     }
 
     footer {
@@ -105,7 +126,7 @@
 </head>
 <body>
   <header>
-    <img src="blslogo2022_TEAMdesertcolor3.png" alt="BLS logo">
+    <img src="blslogo.png" alt="BLS logo">
     <h1>BLS Airsoft Játékszervezés</h1>
   </header>
 
