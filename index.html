@@ -40,13 +40,12 @@
 
     .header-left {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      gap: 1rem;
     }
 
     header img {
       height: 70px;
-      margin-bottom: 0.5rem;
     }
 
     header h1 {
@@ -58,7 +57,7 @@
     .contact-bar {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-end;
       gap: 0.3rem;
       font-size: 0.9rem;
       color: var(--light);
@@ -82,6 +81,7 @@
       flex-direction: column;
       gap: 2rem;
       padding: 2rem;
+      align-items: center;
     }
 
     .section {
@@ -95,6 +95,8 @@
       flex-direction: column;
       align-items: center;
       text-align: left;
+      width: 100%;
+      max-width: 800px;
     }
 
     .section-content {
@@ -136,11 +138,11 @@
     }
 
     .section img[src="promo2.jpg"] {
-      object-position: 60% center;
+      object-position: 40% center;
     }
 
     .section img[src="promo3.jpg"] {
-      object-position: center 40%;
+      object-position: center 60%;
     }
 
     footer {
@@ -154,6 +156,8 @@
     @media (min-width: 768px) {
       .container {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .section {
