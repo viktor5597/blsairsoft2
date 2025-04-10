@@ -31,31 +31,37 @@
 
     header {
       background-color: var(--green);
-      padding: 2rem 1rem;
-      text-align: center;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     header img {
       height: 70px;
-      display: block;
-      margin: 0 auto 1rem auto;
+      margin-bottom: 0.5rem;
     }
 
     header h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       color: var(--tan);
       text-shadow: 2px 2px 0 var(--border);
     }
 
     .contact-bar {
-      background-color: var(--green);
-      color: var(--light);
-      padding: 1rem;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
       align-items: flex-start;
+      gap: 0.3rem;
       font-size: 0.9rem;
+      color: var(--light);
     }
 
     .contact-bar a {
@@ -166,17 +172,17 @@
 </head>
 <body>
   <header>
-    <img src="blslogo.png" alt="BLS logo">
-    <h1>BLS Airsoft Játékszervezés</h1>
+    <div class="header-left">
+      <img src="blslogo.png" alt="BLS logo">
+      <h1>BLS Airsoft Játékszervezés</h1>
+    </div>
+    <div class="contact-bar">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:blsairsoft.shop@gmail.com" target="_blank">blsairsoft.shop@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+36302112039" target="_blank">(30) 211 2039</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/blsairsoft" target="_blank">@blsairsoft</a></p>
+      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/blsairsoftjatekszervezes" target="_blank">BLSAIRSOFTJATEKSZERVEZES</a></p>
+    </div>
   </header>
-
-  <div class="contact-bar">
-    <p><strong>Elérhetőség:</strong></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:blsairsoft.shop@gmail.com" target="_blank">blsairsoft.shop@gmail.com</a></p>
-    <p><i class="fas fa-phone"></i> <a href="tel:+36302112039" target="_blank">(30) 211 2039</a></p>
-    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/blsairsoft" target="_blank">@blsairsoft</a></p>
-    <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/blsairsoftjatekszervezes" target="_blank">BLSAIRSOFTJATEKSZERVEZES</a></p>
-  </div>
 
   <main class="container">
     <section class="section">
