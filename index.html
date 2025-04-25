@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -34,9 +35,8 @@
       padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-      flex-direction: column;
       text-align: center;
     }
 
@@ -44,7 +44,6 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      flex-direction: column;
     }
 
     header img {
@@ -60,11 +59,10 @@
     .contact-bar {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-end;
       gap: 0.3rem;
       font-size: 0.9rem;
       color: var(--light);
-      margin-top: 1rem;
     }
 
     .contact-bar a {
@@ -78,6 +76,23 @@
 
     .contact-bar i {
       margin-right: 0.5rem;
+    }
+
+    .shop-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .shop-logo img {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .shop-logo span {
+      color: var(--tan);
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 0 var(--border);
     }
 
     .container {
@@ -190,6 +205,10 @@
       <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/blsairsoft" target="_blank">@blsairsoft</a></p>
       <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/blsairsoftjatekszervezes" target="_blank">BLSAIRSOFTJATEKSZERVEZES</a></p>
     </div>
+    <a href="webshop.html" class="shop-logo">
+      <img src="blslogo.png" alt="BLS Shop">
+      <span>blsshop</span>
+    </a>
   </header>
 
   <main class="container">
@@ -201,7 +220,6 @@
           <li>Interaktív bemutatók lebonyolítása.</li>
           <li>Ismert fegyverek bemutatása, célba lövés.</li>
           <li>Sportnapok, falunapok, családi rendezvények.</li>
-          <h1> </h1>
         </ul>
       </div>
     </section>
@@ -213,7 +231,6 @@
           <li>Izgalmas harci feladatok.</li>
           <li>Biztonságos pályák.</li>
           <li>Tapasztalt játékosok felügyelete mellet.</li>
-          <h1>    </h1>
         </ul>
       </div>
     </section>
@@ -222,7 +239,6 @@
       <div class="section-content">
         <h2>Játékszervezés</h2>
         <ul>
-          
           <li>Különböző pályatípusok</li>
           <li>4–6 órás játékidő</li>
           <li>Színes, történetes feladatok</li>
