@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLS Webshop</title>
+  <link rel="icon" type="image/png" href="blslogo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --green: #3d4d2d;
+      --tan: #c1b49a;
+      --dark: #1e1e1e;
+      --light: #f4f4f4;
+      --border: #000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Russo One', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--green);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header img {
+      height: 70px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--tan);
+      text-shadow: 2px 2px 0 var(--border);
+    }
+
+    .shop-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .shop-logo img {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .shop-logo span {
+      color: var(--tan);
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 0 var(--border);
+    }
+
+    main {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      color: var(--tan);
+    }
+
+    footer {
+      background-color: var(--green);
+      padding: 1rem;
+      text-align: center;
+      color: var(--light);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="blslogo.png" alt="BLS logo">
+      <h1>BLS Airsoft Játékszervezés</h1>
+    </div>
+    <a href="webshop.html" class="shop-logo">
+      <img src="blslogo.png" alt="BLS Shop">
+      <span>blsshop</span>
+    </a>
+  </header>
+
+  <main>
+    <h2>A webshop hamarosan elérhető!</h2>
+  </main>
+
+  <footer>
+    &copy; 2025 BLS Airsoft Team | <a href="mailto:blsairsoft.shop@gmail.com" style="color: var(--tan); text-decoration: none;">blsairsoft.shop@gmail.com</a>
+  </footer>
+</body>
+</html>
