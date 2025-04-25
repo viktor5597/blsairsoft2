@@ -33,33 +33,44 @@
     header {
       background-color: var(--green);
       padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
       text-align: center;
     }
 
-    .header-left {
+    .header-logos-wrapper {
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      justify-content: center;
     }
 
-    header img {
+    .header-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .header-logos a {
+      text-decoration: none;
+      color: var(--tan);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .header-logos img {
       height: 70px;
     }
 
-    header h1 {
-      font-size: 2rem;
-      color: var(--tan);
+    .header-logos span {
+      font-size: 1.5rem;
       text-shadow: 2px 2px 0 var(--border);
     }
 
     .contact-bar {
+      margin-top: 1rem;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       gap: 0.3rem;
       font-size: 0.9rem;
       color: var(--light);
@@ -76,23 +87,6 @@
 
     .contact-bar i {
       margin-right: 0.5rem;
-    }
-
-    .shop-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .shop-logo img {
-      height: 50px;
-      cursor: pointer;
-    }
-
-    .shop-logo span {
-      color: var(--tan);
-      font-size: 1.2rem;
-      text-shadow: 1px 1px 0 var(--border);
     }
 
     .container {
@@ -195,9 +189,17 @@
 </head>
 <body>
   <header>
-    <div class="header-left">
-      <img src="blslogo.png" alt="BLS logo">
-      <h1>BLS Airsoft Játékszervezés</h1>
+    <div class="header-logos-wrapper">
+      <div class="header-logos">
+        <a href="index.html">
+          <img src="blslogo.png" alt="BLS logo">
+          <span>BLS Airsoft</span>
+        </a>
+        <a href="webshop.html">
+          <img src="blsshop.png" alt="BLS Shop logo">
+          <span>blsshop</span>
+        </a>
+      </div>
     </div>
     <div class="contact-bar">
       <p><i class="fas fa-envelope"></i> <a href="mailto:blsairsoft.shop@gmail.com" target="_blank">blsairsoft.shop@gmail.com</a></p>
@@ -205,10 +207,6 @@
       <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/blsairsoft" target="_blank">@blsairsoft</a></p>
       <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/blsairsoftjatekszervezes" target="_blank">BLSAIRSOFTJATEKSZERVEZES</a></p>
     </div>
-    <a href="webshop.html" class="shop-logo">
-      <img src="blsshop.png" alt="BLS Shop">
-      <span>blsshop</span>
-    </a>
   </header>
 
   <main class="container">
