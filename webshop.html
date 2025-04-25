@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BLS Airsoft Játékszervezés</title>
+  <title>BLS Webshop</title>
   <link rel="icon" type="image/png" href="blslogo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -64,95 +64,14 @@
       text-shadow: 2px 2px 0 var(--border);
     }
 
-    .contact-bar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3rem;
-      font-size: 0.9rem;
-      color: var(--light);
+    main {
+      padding: 4rem 2rem;
+      text-align: center;
     }
 
-    .contact-bar a {
-      color: var(--light);
-      text-decoration: none;
-    }
-
-    .contact-bar a:hover {
-      text-decoration: underline;
-    }
-
-    .contact-bar i {
-      margin-right: 0.5rem;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      padding: 2rem;
-      align-items: center;
-    }
-
-    .section {
-      background-color: var(--tan);
-      padding: 2rem 1rem;
-      border-radius: 2rem;
-      border: 5px solid var(--border);
-      position: relative;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-      width: 100%;
-      max-width: 800px;
-    }
-
-    .section-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .section h2 {
-      color: var(--green);
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-
-    .section ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0 0 1rem 0;
-    }
-
-    .section li {
-      color: var(--dark);
-      margin: 0.5rem 0;
-    }
-
-    .section li::before {
-      content: "\2713";
-      color: var(--green);
-      margin-right: 0.5rem;
-    }
-
-    .section img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--green);
-      margin-bottom: 1rem;
-    }
-
-    .section img[src="promo2.jpg"] {
-      object-position: 70% center;
-    }
-
-    .section img[src="promo3.jpg"] {
-      object-position: center 20%;
+    main h2 {
+      font-size: 2rem;
+      color: var(--tan);
     }
 
     footer {
@@ -161,26 +80,6 @@
       text-align: center;
       color: var(--light);
       margin-top: 2rem;
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .section {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        text-align: left;
-      }
-
-      .section-content {
-        flex: 1;
-      }
     }
   </style>
 </head>
@@ -196,48 +95,10 @@
         <span>blsshop</span>
       </a>
     </div>
-    <div class="contact-bar">
-      <p><i class="fas fa-envelope"></i> <a href="mailto:blsairsoft.shop@gmail.com" target="_blank">blsairsoft.shop@gmail.com</a></p>
-      <p><i class="fas fa-phone"></i> <a href="tel:+36302112039" target="_blank">(30) 211 2039</a></p>
-      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/blsairsoft" target="_blank">@blsairsoft</a></p>
-      <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/blsairsoftjatekszervezes" target="_blank">BLSAIRSOFTJATEKSZERVEZES</a></p>
-    </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <img src="promo1.jpg" alt="Rendezvények kép">
-      <div class="section-content">
-        <h2>Rendezvények</h2>
-        <ul>
-          <li>Interaktív bemutatók lebonyolítása.</li>
-          <li>Ismert fegyverek bemutatása, célba lövés.</li>
-          <li>Sportnapok, falunapok, családi rendezvények.</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section">
-      <img src="promo2.jpg" alt="Csapatépítő kép">
-      <div class="section-content">
-        <h2>Csapatépítők</h2>
-        <ul>
-          <li>Izgalmas harci feladatok.</li>
-          <li>Biztonságos pályák.</li>
-          <li>Tapasztalt játékosok felügyelete mellet.</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section">
-      <img src="promo3.jpg" alt="Játékszervezés kép">
-      <div class="section-content">
-        <h2>Játékszervezés</h2>
-        <ul>
-          <li>Különböző pályatípusok</li>
-          <li>4–6 órás játékidő</li>
-          <li>Színes, történetes feladatok</li>
-        </ul>
-      </div>
-    </section>
+  <main>
+    <h2>A webshop hamarosan elérhető!</h2>
   </main>
 
   <footer>
