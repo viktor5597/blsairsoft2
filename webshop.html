@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BLS Webshop</title>
-  <link rel="icon" type="image/png" href="blsshop.png" />
+  <link rel="icon" type="image/png" href="blslogo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -33,18 +33,20 @@
     header {
       background-color: var(--green);
       padding: 1rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
+    }
+
+    .header-logos-wrapper {
+      display: flex;
+      justify-content: center;
     }
 
     .header-logos {
       display: flex;
       align-items: center;
-      gap: 2rem;
       justify-content: center;
-      margin-bottom: 1rem;
+      gap: 3rem;
+      flex-wrap: wrap;
     }
 
     .header-logos a {
@@ -72,6 +74,14 @@
     main h2 {
       font-size: 2rem;
       color: var(--tan);
+      margin-bottom: 2rem;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+      color: var(--light);
     }
 
     footer {
@@ -85,20 +95,25 @@
 </head>
 <body>
   <header>
-    <div class="header-logos">
-      <a href="index.html">
-        <img src="blslogo.png" alt="BLS logo">
-        <span>BLS Airsoft</span>
-      </a>
-      <a href="webshop.html">
-        <img src="blsshop.png" alt="BLS Shop logo">
-        <span>SHOP</span>
-      </a>
+    <div class="header-logos-wrapper">
+      <div class="header-logos">
+        <a href="index.html">
+          <img src="blslogo.png" alt="BLS logo">
+          <span>BLS Airsoft</span>
+        </a>
+        <a href="webshop.html">
+          <img src="blslogo.png" alt="BLS Shop logo">
+          <span>blsshop</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
-    <h2>A webshop hamarosan elérhető!</h2>
+    <h2>Üdvözlünk a BLS Shop oldalán!</h2>
+    <p><strong>Fontos!</strong> Rendelést leadni csak <strong>telefonon</strong>, <strong>Facebookon</strong> vagy <strong>e-mailben</strong> lehetséges.</p>
+    <p>Ez az oldal kizárólag <strong>tájékoztató jellegű</strong>. Az aktuális árak, készletinformációk és kedvezmények elérhetők a Facebook oldalunkon.</p>
+    <p>Kövess minket: <a href="https://www.facebook.com/airsoftBLS target="_blank" style="color: var(--tan); text-decoration: underline;">facebook.com/airsoftBLS</a></p>
   </main>
 
   <footer>
